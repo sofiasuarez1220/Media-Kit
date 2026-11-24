@@ -229,6 +229,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   .title{font-size:clamp(52px,15vw,80px)}
   .bar-row{grid-template-columns:76px 1fr 46px}
 }
+
+/* mobile: territory photo as a small square beside the text */
+@media (max-width:600px){
+  .terr{gap:20px}
+  .terr article{display:grid;grid-template-columns:104px minmax(0,1fr);column-gap:16px;align-items:start}
+  .terr img{grid-row:1 / span 3;width:104px;height:104px;aspect-ratio:1/1;object-position:50% 20%}
+  .terr .tag{padding:0 0 6px;margin-bottom:8px}
+  .terr h3{font-size:30px}
+  .terr p{font-size:14px;line-height:1.5}
+}
 </style>
 
 <header class="bar">
